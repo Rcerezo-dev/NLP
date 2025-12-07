@@ -7,7 +7,7 @@ import pandas as pd
 stopwords = set(STOP_WORDS)
 
 # Cargar spaCy solo una vez y sin funciones lentas
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 
 def top_words (df, n=20):
     """
@@ -138,3 +138,8 @@ def remove_entities(text):
 
     # Normalizar espacios antes de devolver
     return " ".join(cleaned_text.split())
+
+
+
+
+
